@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Management</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datepickerjs/dist/datepicker.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .menu {
+      display: flex;
+    }
+    
+    .menu-item {
+      margin-left: 10px;
+      padding: 5px 10px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #e0e0e0;
+    }
+    
+    .menu-item:hover {
+      background-color: #ccc;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .checkbox {
+      margin-right: 10px;
+    }
+    
+    .task {
+      flex-grow: 1;
+    }
+    
+    .datepicker-container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .datepicker-container label {
+      margin-right: 10px;
+    }
+    
+    .datepicker-container input {
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Task Management</div>
+    <div class="menu">
+      <a href="index.html" class="menu-item">Home</a>
+      <a href="tasks.html" class="menu-item">Tasks</a>
+      <a href="settings.html" class="menu-item">Settings</a>
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2>Task Management</h2>
+    <ul id="taskList">
+      <li>
+        <input type="checkbox" class="checkbox">
+        <span class="task">Task 1</span>
+      </li>
+      <li>
+        <input type="checkbox" class="checkbox">
+        <span class="task">Task 2</span>
+      </li>
+      <li>
+        <input type="checkbox" class="checkbox">
+        <span class="task">Task 3</span>
+     
+    </ul>
+
+    <div class="datepicker-container">
+      <label for="datepicker">Select Date:</label>
+      <input type="text" id="datepicker" readonly>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/datepickerjs"></script>
+  <script>
+    // JavaScript code here...
+  </script>
+</body>
+</html>
